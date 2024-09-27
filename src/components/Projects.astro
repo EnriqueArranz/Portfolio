@@ -5,7 +5,8 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import Java from "./icons/Java.astro"
-
+import SpringBoot from "./icons/SpringBoot.astro"
+import JWT from "./icons/JWT.astro"
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -22,24 +23,34 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Java,
   },
+  SPRINGBOOT: {
+    name: "SpringBoot",
+    class: "bg-[#003159] text-white",
+    icon: SpringBoot,
+  },
+  JWT: {
+    name: "JWT",
+    class: "bg-[#003159] text-white",
+    icon: JWT,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Directorio para estudiantes",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
+      "Permite integrar examenes crear nuevas materias y almacenar los resultados de cada alumno mediante el login",
+    link: "https://github.com/EnriqueArranz/Portal_Estudiantes_Backend",
+    github: "https://github.com/EnriqueArranz/Portal_Estudiantes_Backend",
     image: "/projects/svgl.webp",
-    tags: [TAGS.JAVA, TAGS.TAILWIND],
+    tags: [TAGS.JAVA, TAGS.SPRINGBOOT],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Dice Game",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
+      "Juego de dados desarrollado en IT Academy con seguridad JWT Token",
+    link: "https://github.com/EnriqueArranz/DICE_GAME",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.JAVA, TAGS.JWT],
   },
 ]
 ---
