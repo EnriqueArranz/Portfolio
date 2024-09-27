@@ -7,6 +7,7 @@ import LinkButton from "./LinkButton.astro"
 import Java from "./icons/Java.astro"
 import SpringBoot from "./icons/SpringBoot.astro"
 import JWT from "./icons/JWT.astro"
+import Angular from "./icons/Angular.astro"
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -33,6 +34,11 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: JWT,
   },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-[#003159] text-white",
+    icon: Angular,
+  },
 }
 const PROJECTS = [
   {
@@ -42,15 +48,16 @@ const PROJECTS = [
     link: "https://github.com/EnriqueArranz/Portal_Estudiantes_Backend",
     github: "https://github.com/EnriqueArranz/Portal_Estudiantes_Backend",
     image: "/projects/svgl.webp",
-    tags: [TAGS.JAVA, TAGS.SPRINGBOOT],
+    tags: [TAGS.JAVA, TAGS.ANGULAR],
   },
   {
     title: "Dice Game",
     description:
       "Juego de dados desarrollado en IT Academy con seguridad JWT Token",
     link: "https://github.com/EnriqueArranz/DICE_GAME",
+    github: "https://github.com/EnriqueArranz/DICE_GAME",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.JAVA, TAGS.JWT],
+    tags: [TAGS.JAVA, TAGS.SPRINGBOOT],
   },
 ]
 ---
@@ -92,12 +99,12 @@ const PROJECTS = [
               
             </LinkButton>
           )}
-          {link && (
+          {/* {link && (
             <LinkButton href={link}>
               <Link class="size-4" />
               Preview
             </LinkButton>
-          )}
+          )} */}
         </footer>
     </div>
   </div>
